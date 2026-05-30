@@ -1,0 +1,100 @@
+.menu-nav {
+    margin-right: 50px;
+    font-size: small;
+    border-radius: 30px;
+
+    }
+
+ .menu-nav a {
+    text-decoration: none; 
+    color: #333333;
+ }
+
+
+ .menu-nav a:hover {
+    color: #007bff;       
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: large;
+    font-family: cursive;
+}
+
+.buscar { 
+    display: flex;
+    gap: 8px;
+}
+
+.navega {
+    display: flex;
+    align-items: center;
+   
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px 30px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+
+.h3 {
+    background-color: rgb(117, 114, 114);
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.formulario {
+    border: 50px;
+    text-align: center;
+}
+
+.formulario input {
+    padding: 12px 10px 10px 15px;       /* Aumentamos el tamaño interno (arriba/abajo e izquierda/derecha) */
+    border: 1px solid #999;
+    font-size: 16px;          /* Letra más grande para que sea más legible */
+    border-radius: 6px;
+    width: 350px; /* Al Dale un ancho fijo en píxeles (puedes subirlo a 400px si lo prefieres) */
+    flex: none
+}
+
+.boton {
+    border-radius: 5px;
+    color: black;
+    background-color: darkgrey;
+    padding: 10px 10px 10px 10px;
+    
+}
+
+.boton:hover {
+    background-color: #007bff;
+    color: black;
+}
+
+html {
+    height: 100%;
+}   
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;          
+    flex-direction: column; 
+    min-height: 100vh;      
+}
+
+.fotter_ {
+   background-color: #707a8a; /* Gris azulado similar al de tu diseño */
+    color: white;
+    text-align: center;
+    padding: 5px;   
+}
