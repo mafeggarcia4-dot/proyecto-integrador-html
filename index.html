@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Página Principal</title>
     <link rel="stylesheet" href="estilos/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -52,66 +52,73 @@
     </header>
 
 
-    <main class="grid-container">
-        <article class="tarjeta">
-            <section class="img-tarjeta">
-                <img src="img/img_estudiantes.jpg" alt="Registro Estudiantes">
-            </section>
+    <section class="container-sm">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/img_estudiantes.jpg" class="card-img-top" alt="Registrar estudiantes">
+                    <div class="card-body">
+                        <a href="reg_estudiantes.html">
+                            <h5 class="card-title">Registro estudiantes</h5>
+                        </a>
+                        <p class="card-text">En esta sección prodrá registrar, actualizar y consultar la información de
+                            los esstudiantes del colegio</p>
+                    </div>
+                </div>
+            </div>
 
-            <section class="tarjeta-contenedora">
-                <h3>
-                    <a href="reg_estudiantes.html" target="_blank">Registro Estudiantes</a>
-                </h3>
-                <p>En esta sección prodrá registrar, actualizar y consultar la información de los esstudiantes del
-                    colegio</p>
-            </section>
-        </article>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/img_profesores.jpg" class="card-img-top" alt="Registrar Profesores">
+                    <div class="card-body">
+                        <a href="reg_profesores.html">
+                            <h5 class="card-title">Registro profesores</h5>
+                        </a>
+                        <p class="card-text">En esta sección podrá registrar y administrar la información de los
+                            docentes del colegio.</p>
+                    </div>
+                </div>
+            </div>
 
-        <article class="tarjeta">
-            <section class="img-tarjeta">
-                <img src="img/img_profesores.jpg" alt="Registro Profesores">
-            </section>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/img_asistencia.jpg" class="card-img-top" alt="Registrar Asistencia">
+                    <div class="card-body">
+                        <a href="reg_asistencia.html">
+                            <h5 class="card-title">Registro Asistencia</h5>
+                        </a>
+                        <p class="card-text">Aquí se lleva el control de asistencia de los estudiantes y profesores.
+                            Permite registrar entradas, salidas y absences.</p>
+                    </div>
+                </div>
+            </div>
 
-            <section class="tarjeta-contenedora">
-                <h3>
-                    <a href="http://127.0.0.1:5500/reg_profesores.html" target="_blank">Registro Profesores</a>
-                </h3>
-                <p>En esta sección podrá registrar y administrar la información de los docentes del colegio.</p>
-            </section>
-        </article>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/img_notas.jpg" class="card-img-top" alt="Registrar Notas">
+                    <div class="card-body">
+                        <a href="reg_notas.html">
+                            <h5 class="card-title">Registro Notas</h5>
+                        </a>
+                        <p class="card-text">En este módulo se registran las calificaciones de los estudiantes. Ofrece
+                            un control detallado del rendimiento académico por asignatura.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <br>
+    <br>
+    <br>
 
 
-        <article class="tarjeta">
-            <section class="img-tarjeta">
-                <img src="img/img_asistencia.jpg" alt="Registro Asistencia">
-            </section>
-
-            <section class="tarjeta-contenedora">
-                <h3>
-                    <a href="http://127.0.0.1:5500/reg_asistencia.html" target="_blank">Registro Asistencia</a>
-                </h3>
-                <p>Aquí se lleva el control de asistencia de los estudiantes y profesores. Permite registrar entradas,
-                    salidas y ausencias.</p>
-            </section>
-        </article>
-
-        <article class="tarjeta">
-            <section class="img-tarjeta">
-                <img src="img/img_notas.jpg" alt="Registro Notas">
-            </section>
-            <section class="tarjeta-contenedora">
-                <h3>
-                    <a href="http://127.0.0.1:5500/reg_notas.html" target="_blank">Registro Notas</a>
-                </h3>
-                <p>En este módulo se registran las calificaciones de los estudiantes. Ofrece un control detallado del
-                    rendimiento académico por asignatura.</p>
-            </section>
-        </article>
-    </main>
-
-    <footer class="fotter_">
-        <p>Todos los derechos reservados</p>
+    <footer class="bg-secondary text-white text-center py-4 mt-auto">
+        <div class="container">
+            <p class="mb-0">&copy; Todos los derechos reservados</p>
+        </div>
     </footer>
+
 
 </body>
 
