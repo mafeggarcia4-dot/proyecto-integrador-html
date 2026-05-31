@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro Estudiantes</title>
     <link rel="stylesheet" href="estilos/styles_reg_estud.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
@@ -15,7 +15,7 @@
 
 <body>
 
-       <header>
+    <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">IE- AA</a>
@@ -53,61 +53,64 @@
 
 
 
-<div class="container my-5">
-    <div class="bg-secondary text-dark text-center py-3 mb-5 border-bottom border-dark">
-        <h2 class="fw-bold mb-0">Registro Estudiantes</h2>
-    </div>
+    <section class="container my-5">
+        <section class="bg-secondary text-dark text-center py-3 mb-5 border-bottom border-dark">
+            <h2 class="fw-bold mb-0">Registro Estudiantes</h2>
+        </section>
 
-    <form class="mx-auto" style="max-width: 700px;">
-        
-        <div class="row mb-4 align-items-center">
-            <label for="correo" class="col-sm-4 col-form-label text-sm-end text-start">Correo</label>
-            <div class="col-sm-8">
-                <input type="email" class="form-control py-2" id="correo" placeholder="Ingresar Correo" required>
+        <form class="mx-auto" style="max-width: 700px;">
+
+            <section class="row mb-4 align-items-center">
+                <label for="correo" class="col-sm-4 col-form-label text-sm-end text-start">Correo</label>
+                <section class="col-sm-8">
+                    <input type="email" class="form-control py-2" id="correo" placeholder="Ingresar Correo" required>
+                </section>
+            </section>
+
+            <div class="row mb-4 align-items-center">
+                <label for="nombre" class="col-sm-4 col-form-label text-sm-end text-start">Nombre:</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control py-2" id="nombre" placeholder="Ingrese su nombre " required>
+                </div>
             </div>
-        </div>
 
-        <div class="row mb-4 align-items-center">
-            <label for="nombre" class="col-sm-4 col-form-label text-sm-end text-start">Nombre:</label>
-            <div class="col-sm-8">
-                <input type="text" class="form-control py-2" id="nombre" placeholder="Ingrese su nombre " required>
-            </div>
-        </div>
+            <section class="row mb-4 align-items-center">
+                <label for="apellido" class="col-sm-4 col-form-label text-sm-end text-start">Apellido:</label>
+                <section class="col-sm-8">
+                    <input type="text" class="form-control py-2" id="apellido" placeholder="Ingrese sus apellidos"
+                        required>
+                </section>
+            </section>
 
-        <div class="row mb-4 align-items-center">
-            <label for="apellido" class="col-sm-4 col-form-label text-sm-end text-start">Apellido:</label>
-            <div class="col-sm-8">
-                <input type="text" class="form-control py-2" id="apellido" placeholder="Ingrese sus apellidos" required>
-            </div>
-        </div>
+            <section class="row mb-4 align-items-center">
+                <label for="documento" class="col-sm-4 col-form-label text-sm-end text-start">Número de
+                    Documento:</label>
+                <section class="col-sm-8">
+                    <input type="text" class="form-control py-2" id="documento"
+                        placeholder="Ingrese su número de documento" required>
+                </section>
+            </section>
 
-        <div class="row mb-4 align-items-center">
-            <label for="documento" class="col-sm-4 col-form-label text-sm-end text-start">Número de Documento:</label>
-            <div class="col-sm-8">
-                <input type="text" class="form-control py-2" id="documento" placeholder="Ingrese su número de documento" required>
-            </div>
-        </div>
+            <section class="row mb-5 align-items-center">
+                <label for="cursos" class="col-sm-4 col-form-label text-sm-end text-start">Curso a matricular:</label>
+                <section class="col-sm-8">
+                    <select class="form-select py-2" id="cursos" required>
+                        <option selected disabled value="">Seleccione un curso</option>
+                        <option value="1">Desarrollo de Software</option>
+                        <option value="2">Ingenieria Industrial</option>
+                        <option value="3">Ingenieria Logistica</option>
+                    </select>
+                </section>
+            </section>
 
-        <div class="row mb-5 align-items-center">
-            <label for="cursos" class="col-sm-4 col-form-label text-sm-end text-start">Curso a matricular:</label>
-            <div class="col-sm-8">
-                <select class="form-select py-2" id="cursos" required>
-                    <option selected disabled value="">Seleccione un curso</option>
-                    <option value="1">Desarrollo de Software</option>
-                    <option value="2">Ingenieria Industrial</option>
-                    <option value="3">Ingenieria Logistica</option>
-                </select>
-            </div>
-        </div>
+            <section class="text-center">
+                <button type="submit" class="btn btn-secondary text-dark border-dark px-4 py-2 fw-semibold shadow-sm">
+                    Registrar Estudiante
+                </button>
+            </section>
 
-        <div class="text-center">
-            <button type="submit" class="btn btn-secondary text-dark border-dark px-4 py-2 fw-semibold shadow-sm">
-                Registrar Estudiante
-            </button>
-        </div>
-
-    </form>
-</div>
+        </form>
+    </section>
 
 
 

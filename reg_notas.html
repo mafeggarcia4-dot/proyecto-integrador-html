@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro Notas</title>
     <link rel="stylesheet" href="estilos/styles_reg_notas.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 </head>
+
 <body>
 
     <header>
@@ -50,71 +52,93 @@
     </header>
 
 
-    <main class="contenedor-notas">
-        <section class="banner-seccion">
-            <h2>Registro de Notas</h2>
-        </section>
+    <section class="container my-5">
+        <div class="bg-secondary text-white text-center py-3 mb-4 rounded shadow-sm">
+            <h2 class="fw-bold mb-0">Registro de Notas</h2>
+        </div>
 
-        <section class="info-asignatura">
-            <span class="etiqueta-asignatura">Asignatura</span>
-            <span class="nombre-asignatura">Introducción a la Programación</span>
-        </section>
+        <div class="d-flex align-items-center mb-4">
+            <span class="btn btn-secondary text-white fw-semibold me-3 px-3 py-1"
+                style="pointer-events: none;">Asignatura</span>
+            <span class="fs-5 text-muted">Introducción a la Programación</span>
+        </div>
 
-        <section class="tabla-responsiva">
-            <table class="tabla-notas">
-                <thead>
-                <tr>
-                    <th>Documento</th>
-                    <th>Estudiante</th>
-                    <th>Nota 1</th>
-                    <th>Nota 2</th>
-                </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1234561</td>
-                        <td>Pablo Arboleda</td>
-                        <td><input type="number" step="0.1" ></td>
-                        <td><input type="number" step="0.1"></td>
-                    </tr>
-                    <tr>
-                        <td>1234562</td>
-                        <td>María Berrio</td>
-                        <td><input type="number" step="0.1" ></td>
-                        <td><input type="number" step="0.1"></td>
-                    </tr>
-                    <tr>
-                        <td>1234563</td>
-                        <td>Camilo Castro</td>
-                        <td><input type="number" step="0.1" ></td>
-                        <td><input type="number" step="0.1"></td>
-                    </tr>
-                    <tr>
-                        <td>1234567</td>
-                        <td>Juan Fernandez</td>
-                        <td><input type="number" step="0.1" ></td>
-                        <td><input type="number" step="0.1"></td>
-                    </tr>
-                    <tr>
-                         <td>1234569</td>
-                        <td>Mario Jaramillo</td>
-                        <td><input type="number" step="0.1" ></td>
-                        <td><input type="number" step="0.1"></td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+        <form>
+            <div class="table-responsive border rounded">
+                <table class="table table-bordered align-middle mb-0 text-center">
+                    <thead class="table-success text-white">
+                        <tr>
+                            <th scope="col" class="py-3" style="background-color: #9ccc65; border-color: #aed581;">
+                                Documento</th>
+                            <th scope="col" class="py-3" style="background-color: #9ccc65; border-color: #aed581;">
+                                Estudiante</th>
+                            <th scope="col" class="py-3" style="background-color: #9ccc65; border-color: #aed581;">Nota
+                                1</th>
+                            <th scope="col" class="py-3" style="background-color: #9ccc65; border-color: #aed581;">Nota
+                                2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1234561</td>
+                            <td class="text-start ps-4">Pablo Arboleda</td>
+                            <td><input type="number" step="0.1" min="0" max="5" class="form-control text-center mx-auto"
+                                    style="max-width: 90%;" required></td>
+                            <td><input type="number" step="0.1" min="0" max="5" class="form-control text-center mx-auto"
+                                    style="max-width: 90%;" required></td>
+                        </tr>
+                        <tr>
+                            <td>1234562</td>
+                            <td class="text-start ps-4">María Berrio</td>
+                            <td><input type="number" step="0.1" min="0" max="5" class="form-control text-center mx-auto"
+                                    style="max-width: 90%;" required></td>
+                            <td><input type="number" step="0.1" min="0" max="5" class="form-control text-center mx-auto"
+                                    style="max-width: 90%;" required></td>
+                        </tr>
+                        <tr>
+                            <td>1234563</td>
+                            <td class="text-start ps-4">Camilo Castro</td>
+                            <td><input type="number" step="0.1" min="0" max="5" class="form-control text-center mx-auto"
+                                    style="max-width: 90%;" required></td>
+                            <td><input type="number" step="0.1" min="0" max="5" class="form-control text-center mx-auto"
+                                    style="max-width: 90%;" required></td>
+                        </tr>
+                        <tr>
+                            <td>1234567</td>
+                            <td class="text-start ps-4">Juan Fernandez</td>
+                            <td><input type="number" step="0.1" min="0" max="5" class="form-control text-center mx-auto"
+                                    style="max-width: 90%;" required></td>
+                            <td><input type="number" step="0.1" min="0" max="5" class="form-control text-center mx-auto"
+                                    style="max-width: 90%;" required></td>
+                        </tr>
+                        <tr>
+                            <td>1234569</td>
+                            <td class="text-start ps-4">Mario Jaramillo</td>
+                            <td><input type="number" step="0.1" min="0" max="5" class="form-control text-center mx-auto"
+                                    style="max-width: 90%;" required></td>
+                            <td><input type="number" step="0.1" min="0" max="5" class="form-control text-center mx-auto"
+                                    style="max-width: 90%;" required></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-        <section class="contenedor-acciones">
-            <button type="submit" class="btn-guardar">Guardar Notas</button>
-        </section>
-    </main>
+            <div class="d-flex justify-content-end mt-4">
+                <button type="submit" class="btn btn-success px-4 py-2 fw-semibold shadow-sm">
+                    Guardar Notas
+                </button>
+            </div>
+        </form>
+    </section>
 
-     <footer class="bg-secondary text-white text-center py-4 mt-auto">
+
+
+    <footer class="bg-secondary text-white text-center py-4 mt-auto">
         <div class="container">
             <p class="mb-0">&copy; Todos los derechos reservados</p>
         </div>
     </footer>
-    
+
 </body>
+
 </html>
