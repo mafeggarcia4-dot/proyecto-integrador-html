@@ -52,57 +52,63 @@
     </header>
 
 
-    <section>
-        <h3 class="h3">Registro Estudiantes</h3>
-    </section>
 
-    <section class="formulario">
-        <fieldset>
-            <label for="">Correo
-                <input type="email" required placeholder="Ingresar Correo">
-            </label>
-            <br>
-            <br>
-            <br>
+<div class="container my-5">
+    <div class="bg-secondary text-dark text-center py-3 mb-5 border-bottom border-dark">
+        <h2 class="fw-bold mb-0">Registro Estudiantes</h2>
+    </div>
 
-            <label for="">Nombre:
-                <input type="text" required placeholder="Ingrese su Nombre">
-            </label>
-            <br>
-            <br>
-            <br>
+    <form class="mx-auto" style="max-width: 700px;">
+        
+        <div class="row mb-4 align-items-center">
+            <label for="correo" class="col-sm-4 col-form-label text-sm-end text-start">Correo</label>
+            <div class="col-sm-8">
+                <input type="email" class="form-control py-2" id="correo" placeholder="Ingresar Correo" required>
+            </div>
+        </div>
 
-            <label for="">Apellido:
-                <input type="text" required placeholder="Ingrese sus Apellidos">
-            </label>
-            <br>
-            <br>
-            <br>
+        <div class="row mb-4 align-items-center">
+            <label for="nombre" class="col-sm-4 col-form-label text-sm-end text-start">Nombre:</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control py-2" id="nombre" placeholder="Ingrese su nombre " required>
+            </div>
+        </div>
 
-            <label for="">Número de Documento:
-                <input type="text" required placeholder="Ingrese su Número de Documento">
-            </label>
-            <br>
-            <br>
-            <br>
+        <div class="row mb-4 align-items-center">
+            <label for="apellido" class="col-sm-4 col-form-label text-sm-end text-start">Apellido:</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control py-2" id="apellido" placeholder="Ingrese sus apellidos" required>
+            </div>
+        </div>
 
+        <div class="row mb-4 align-items-center">
+            <label for="documento" class="col-sm-4 col-form-label text-sm-end text-start">Número de Documento:</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control py-2" id="documento" placeholder="Ingrese su número de documento" required>
+            </div>
+        </div>
 
-            <label for="">Cursos:
-                <select>
-                    <option></option>
-                    <option>Desarrollo de Software</option>
-                    <option>Ingenieria Industrial</option>
-                    <option>Ingenieria Logistica</option>
+        <div class="row mb-5 align-items-center">
+            <label for="cursos" class="col-sm-4 col-form-label text-sm-end text-start">Curso a matricular:</label>
+            <div class="col-sm-8">
+                <select class="form-select py-2" id="cursos" required>
+                    <option selected disabled value="">Seleccione un curso</option>
+                    <option value="1">Desarrollo de Software</option>
+                    <option value="2">Ingenieria Industrial</option>
+                    <option value="3">Ingenieria Logistica</option>
                 </select>
-            </label>
-            <br>
-            <br>
-            <br>
+            </div>
+        </div>
 
-            <button type="button" class="boton">Registrar Estudiante</button>
+        <div class="text-center">
+            <button type="submit" class="btn btn-secondary text-dark border-dark px-4 py-2 fw-semibold shadow-sm">
+                Registrar Estudiante
+            </button>
+        </div>
 
-        </fieldset>
-    </section>
+    </form>
+</div>
+
 
 
     <footer class="bg-secondary text-white text-center py-4 mt-auto">
